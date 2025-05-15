@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\belgorog.png" />
+    <None Remove="Resources\chelyaba.png" />
+    <None Remove="Resources\Chelyabinsk_1.png" />
+    <None Remove="Resources\Chelyabinsk_1.зтп.jpg" />
+    <None Remove="Resources\Ekb.png" />
+    <None Remove="Resources\EkskursMoskow.png" />
+    <None Remove="Resources\Habarovsk.png" />
+    <None Remove="Resources\irkutsk.png" />
+    <None Remove="Resources\IrkutskBaikal.png" />
+    <None Remove="Resources\Kaliningrad.png" />
+    <None Remove="Resources\KazanKremlin.png" />
+    <None Remove="Resources\Kursk.png" />
+    <None Remove="Resources\MARK2StolbWutututututututututuututu.png" />
+    <None Remove="Resources\NightMoskow.png" />
+    <None Remove="Resources\Novosib.png" />
+    <None Remove="Resources\Omsk.png" />
+    <None Remove="Resources\Perm.png" />
+    <None Remove="Resources\permder.png" />
+    <None Remove="Resources\picture.png" />
+    <None Remove="Resources\Rostov.png" />
+    <None Remove="Resources\Saransk.png" />
+    <None Remove="Resources\sevastop.png" />
+    <None Remove="Resources\SochiSummer.png" />
+    <None Remove="Resources\SPBWhiteNight.png" />
+    <None Remove="Resources\Tomsk.png" />
+    <None Remove="Resources\tumen.png" />
+    <None Remove="Resources\Ufa.png" />
+    <None Remove="Resources\VladikSea.png" />
+    <None Remove="Resources\Volgjgrad.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\belgorog.png" />
+    <Resource Include="Resources\chelyaba.png" />
+    <Resource Include="Resources\Chelyabinsk_1.png" />
+    <Resource Include="Resources\Chelyabinsk_1.зтп.jpg" />
+    <Resource Include="Resources\Ekb.png" />
+    <Resource Include="Resources\EkskursMoskow.png" />
+    <Resource Include="Resources\Habarovsk.png" />
+    <Resource Include="Resources\irkutsk.png" />
+    <Resource Include="Resources\IrkutskBaikal.png" />
+    <Resource Include="Resources\Kaliningrad.png" />
+    <Resource Include="Resources\KazanKremlin.png" />
+    <Resource Include="Resources\Kursk.png" />
+    <Resource Include="Resources\MARK2StolbWutututututututututuututu.png" />
+    <Resource Include="Resources\NightMoskow.png" />
+    <Resource Include="Resources\Novosib.png" />
+    <Resource Include="Resources\Omsk.png" />
+    <Resource Include="Resources\Perm.png" />
+    <Resource Include="Resources\permder.png" />
+    <Resource Include="Resources\picture.png" />
+    <Resource Include="Resources\Rostov.png" />
+    <Resource Include="Resources\Saransk.png" />
+    <Resource Include="Resources\sevastop.png" />
+    <Resource Include="Resources\SochiSummer.png" />
+    <Resource Include="Resources\SPBWhiteNight.png" />
+    <Resource Include="Resources\Tomsk.png" />
+    <Resource Include="Resources\tumen.png" />
+    <Resource Include="Resources\Ufa.png" />
+    <Resource Include="Resources\VladikSea.png" />
+    <Resource Include="Resources\Volgjgrad.png" />
+    <Resource Include="Resources\Краснодар_купеческий.png" />
+  </ItemGroup>
+
+</Project>

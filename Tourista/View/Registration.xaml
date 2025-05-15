@@ -1,0 +1,81 @@
+﻿<Window x:Class="Tourista.View.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tourista.View"
+        mc:Ignorable="d"
+        Title="Tourista - Регистрация" 
+        Height="690" Width="390"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Style="{StaticResource {x:Type Window}}">
+
+    <Grid Background="{StaticResource BackgroundColor}">
+        <Border Style="{StaticResource AviasalesResultsBorder}" 
+                Width="320" 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center"
+                Padding="25">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <!-- Заголовок -->
+                    <TextBlock Text="Регистрация" 
+                               Style="{StaticResource AviasalesTitleText}"
+                               Margin="0,0,0,25"
+                               FontSize="22"/>
+
+                    <!-- Поле email -->
+                    <Label Content="Электронная почта" Style="{StaticResource AviasalesLabel}"/>
+                    <TextBox x:Name="EmailTextBox" 
+                             Style="{StaticResource AviasalesTextBox}"
+                             Margin="0,0,0,15"/>
+
+                    <!-- Поле пароля -->
+                    <Label Content="Пароль" Style="{StaticResource AviasalesLabel}"/>
+                    <PasswordBox x:Name="PasswordBox" 
+                                 Style="{StaticResource AviasalesPasswordBox}"
+                                 Margin="0,0,0,15"/>
+
+                    <!-- Поле имени -->
+                    <Label Content="Имя" Style="{StaticResource AviasalesLabel}"/>
+                    <TextBox x:Name="FirstNameTextBox" 
+                             Style="{StaticResource AviasalesTextBox}"
+                             Margin="0,0,0,15"/>
+
+                    <!-- Поле фамилии -->
+                    <Label Content="Фамилия" Style="{StaticResource AviasalesLabel}"/>
+                    <TextBox x:Name="LastNameTextBox" 
+                             Style="{StaticResource AviasalesTextBox}"
+                             Margin="0,0,0,15"/>
+
+                    <!-- Поле телефона -->
+                    <Label Content="Номер телефона" Style="{StaticResource AviasalesLabel}"/>
+                    <TextBox x:Name="PhoneTextBox" 
+                             Style="{StaticResource AviasalesTextBox}"
+                             Margin="0,0,0,20"/>
+
+                    <!-- Кнопка регистрации -->
+                    <Button Content="Зарегистрироваться" 
+                            Style="{StaticResource AviasalesButton}"
+                            Margin="0,10"
+                            Height="40"
+                            FontSize="14"
+                            Click="RegisterButton_Click"/>
+
+                    <!-- Ссылка на вход -->
+                    <TextBlock Margin="0,20,0,0" 
+                               HorizontalAlignment="Center"
+                               TextAlignment="Center">
+                        <Run Text="Уже есть аккаунт? "/>
+                        <Hyperlink x:Name="LoginLink" 
+                                   Click="LoginLink_Click"
+                                   Style="{StaticResource {x:Type Hyperlink}}">
+                            Войти
+                        </Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Window>
